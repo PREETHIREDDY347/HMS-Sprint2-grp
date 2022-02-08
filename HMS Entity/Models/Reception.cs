@@ -11,6 +11,7 @@ namespace HMS_Entity.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int AppointmentId { get; set; }
+        public DateTime AppointmentTime { get; set; }
         public Doctor doctor { get; set; }
         [ForeignKey("DoctorId")]
         public string DoctorId { get; set; }
